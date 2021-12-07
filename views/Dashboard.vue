@@ -5,7 +5,7 @@
       <Login :verifyUser="verifyUser" />
     </div>
     <div>
-      <video-player :options="videoOptions"/>
+      <VideoPlayer/>
     </div>
     
   </div>
@@ -28,8 +28,8 @@ export default {
     currentUser: null
   },
   created () {
-    this.updateData();
-    document.title = 'test'
+    // this.updateData();
+    // document.title = 'test'
   },
   computed:{
   },
@@ -40,11 +40,11 @@ export default {
 				controls: true,
         plugins: { eventTracking: true },
 				sources: [
-					{
-						src:
-              require('../assets/test.mp4'),
-              type: "video/mp4"
-					}
+					// {
+					// 	src:
+          //     require('../assets/test.mp4'),
+          //     type: "video/mp4"
+					// }
 				]
 			},
   }
